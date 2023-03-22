@@ -49,7 +49,6 @@ h1 {
     color: white;
 }
 
-
 /* seccion hero */
 .hero {
    background-color: #f5f6f7;
@@ -65,7 +64,7 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin:20px;
+    margin:0 auto;
 }
 
 /*sobre mi*/
@@ -77,6 +76,41 @@ h1 {
     max-width: 600px;
     text-align: center;
 }
+
+/*experiencia*/
+.experiencia {
+   padding: 40px;
+ }
+ .experiencia-columna {
+   padding: 20px;
+   border: 2px solid #8080804d;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   transition: all 0.3s ease-in;
+ }
+.experiencia .columna:hover {
+   color:white;
+   background-color: #1b1b32;
+}
+.experiencia i {
+   font-size: 1.0rem;
+   color:#dedee7;
+   background-color: #0a0a23;
+   padding: 8px 12px;
+   border-radius: 50%;
+   margin-top: 6px;
+ }
+.badges-contenedor {
+   font-size: 20px;
+   font-weight: bold;
+   margin: 10px 0;
+}
+.badge {
+   margin: 4px;
+}
+
 /*conocimientos*/
  .conocimientos {
     padding: 40px;
@@ -95,10 +129,10 @@ h1 {
     background-color: #1b1b32;
  }
  .conocimientos i {
-   font-size: 2.5rem;
-   color:#191ca7;
+   font-size: 1.0rem;
+   color:#d9d9e6;
    background-color: #0a0a23;
-   padding: 8px 19px;
+   padding: 8px 12px;
    border-radius: 50%;
  }
  .conocimientos-titulo {
@@ -185,7 +219,7 @@ h1 {
  }
  .iconos-redes-sociales i {
     color:white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: all 0.2s ease-in;
  }
  .iconos-redes-sociales a:hover {
@@ -200,3 +234,116 @@ h1 {
     color:#706a6a;
     padding: 20px;
  }
+  /*general*/
+   .boton-edicion i {
+   font-size: 1.0rem;
+   color:#dedee7;
+   background-color: #0a0a23;
+   padding: 8px 12px;
+   border-radius: 50%;
+   }
+ /*habilidades*/
+ .caja-padre{
+   width: 40%;
+   min-width: 590px;
+   position: static;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ .graficos-contenedor{
+   width: 100%;
+   padding: 30px 30px 50px;
+   border: 2px solid #0a0a23;
+   border-radius: 10px;
+ }
+ .h2{
+   letter-spacing: 2px;
+   text-align: center;
+   font-size: 34px;
+   font-weight: bold;
+ }
+ .skills:not(:last-child){
+ margin-bottom: 30px;
+}
+.detales{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+.menu{
+   position: relative;
+   border: 1px solid #2359f0;
+   border-radius: 20px;
+}
+.menu div {
+   position: relative;
+   width: 0;
+   height: 8px;
+   border-radius: 10px;
+   background-color: #2359f0;
+}
+#html-menu{
+   animation: html-barra 2s forwards;
+}
+@keyframes html-barra{
+   100%{
+      width: 40%;
+   }
+}
+#css-menu{
+   animation: css-barra 2s forwards;
+}
+@keyframes css-barra{
+   100%{
+      width: 30%;
+   }
+}
+#javascript-menu{
+   animation: javascript-barra 2s forwards;
+}
+@keyframes javascript-barra{
+   100%{
+      width: 15%;
+   }
+}
+#angular-menu{
+   animation: angular-barra 2s forwards;
+}
+@keyframes angular-barra{
+   100%{
+      width: 25%;
+   }
+}
+#trabajo-menu{
+   animation: trabajo-barra 2s forwards;
+}
+@keyframes trabajo-barra{
+   100%{
+      width: 45%;
+   }
+}
+#creatividad-menu{
+   animation: creatividad-barra 2s forwards;
+}
+@keyframes creatividad-barra{
+   100%{
+      width: 28%;
+   }
+}
+#planificacion-menu{
+   animation: planificacion-barra 2s forwards;
+}
+@keyframes planificacion-barra{
+   100%{
+      width: 25%;
+   }
+}
+#autonomia-menu{
+   animation: autonomia-barra 2s forwards;
+}
+@keyframes autonomia-barra{
+   100%{
+      width: 38%;
+   }
+}
